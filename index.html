@@ -4,24 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <style>
+      #resume{
+        color: orange;
+        font-weight: bolder;
+      }
+      #abc{
+        color: chartreuse;
+      }
+      .xyz{
+        text-decoration: none;
+        color: darkgreen;
+        font-weight: bold;
+      }
+      .heading{
+        color: rgb(9, 112, 116);
+        font-style: italic;
+      }
+      p{
+        font-weight: bolder;
+        color: darkred;
+      }
+      
+    </style>
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <p> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <svg id="abc" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
              </svg>  &nbsp;Pooja Munde   &nbsp; &nbsp; &nbsp;
 
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+         <svg id="abc" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
          </svg>  &nbsp; 8600 2550 66  &nbsp; &nbsp; &nbsp;
 
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+         <svg id="abc" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
          </svg> &nbsp; abc@gmail.com  &nbsp; &nbsp; &nbsp;
 
-         <a href="assets/resume.pdf" download> 
+         <a class="xyz" href="assets/resume.pdf" download id="resume"> 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
             <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
           </svg>
@@ -31,27 +54,27 @@
 
     <!-- Navigation Section -->
     <nav>
-      <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#teckstack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#project">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#education">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="others.html" target="_blank">OTHERS</a>
+      <a class="xyz" href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a class="xyz" href="#teckstack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a class="xyz" href="#project">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a class="xyz" href="#education">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a class="xyz" href="personalDetail.html" target="_blank">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a class="xyz" href="others.html" target="_blank">OTHERS</a>
     </nav>
 
     <!-- Main Section -->
     <section>
       <!-- HOME Section -->
       <section id="home">
-        <h2>Professional Summary</h2>
+        <h2 class="heading" >Professional Summary</h2>
         <ul>
-          <li>Having 1 years of exeperience developing single page Web Applications using Angular8, HTML5, CSS3, Bootstrap 5, Typescript, Javascript</li>
-          <li>Exeperience on Working with Version control system- GIT And GitHub</li>
-          <li>Exeperience working with JIRA for user stories and bug tracking</li>
-          <li>Strong Debugging and troubleshooting code exeperience using Chrome Developer Tool</li>
+          <li style="color: rgb(130, 8, 8);">Having 1 years of experience developing single page Web Applications using Angular8, HTML5, CSS3, Bootstrap 5, Typescript, Javascript</li>
+          <li>Experience on Working with Version control system- GIT And GitHub</li>
+          <li>Experience working with JIRA for user stories and bug tracking</li>
+          <li>Strong Debugging and troubleshooting code experience using Chrome Developer Tool</li>
           <li>Working Exposure on ID's like VS Code And Notepad ++ </li>
-          <li>Good Working Exeperience under Agile methodologies environment</li>
-          <li>Exeperience in Using Chrome developer Tool for debugging and Troubleshooting the code</li>
+          <li>Good Working Experience under Agile methodologies environment</li>
+          <li>Experience in Using Chrome developer Tool for debugging and Troubleshooting the code</li>
           <li>Knowledge of NodeJS</li>
           <li>Ability to work with people at all levels in the programs</li>
         </ul>
@@ -60,7 +83,7 @@
       <hr>
       <!-- techStack section -->
       <section id="techStack">
-        <h2>My Technology stack is</h2>
+        <h2 class="heading">My Technology stack is</h2>
         <table border="1">
           <thead>
             <tr>
@@ -97,7 +120,7 @@
       <hr>
       <!-- project details section -->
       <section id="project">
-        <h2>Projects Details</h2>
+        <h2 class="heading">Projects Details</h2>
         <p>
           <strong>Name: &nbsp;&nbsp;<u>Student Management</u></strong> <br>
           <br>
@@ -109,7 +132,7 @@
           student registration, student update, and to see all the list of academic activities like score card and attendance.
       </p>
       <hr>
-      <h2>Roles And Responsibilities</h2>
+      <h2 class="heading">Roles And Responsibilities</h2>
       <ul>
           <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li>Work closely with backend developers for code integration</li>
@@ -125,7 +148,7 @@
       <hr>
       <!-- education details section -->
       <section id="education">
-        <h2>My Educational Details</h2>
+        <h2 class="heading">My Educational Details</h2>
         <table border="1">
           <thead>
             <tr>
