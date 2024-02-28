@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
     <style>
+      *{
+        border-style: solid;
+      }
+      #home{
+            /* border-left-style: dotted;
+            border-width: 5px;
+            border-color: red; */
+            border: 5px solid rgb(190, 187, 187);
+        }
+      .summary{
+          color: blue; 
+          font-style: italic;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          text-align: center;
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+    
         .Name{
             color: rgb(5, 99, 103);
             font-weight: bolder;
@@ -13,18 +31,31 @@
             font-weight: normal;
             color: rgb(227, 18, 18);
         }
+        
+        #experience{
+            font-weight: bolder;
+        }
+        .tech{
+            color: cadetblue;
+        }
+        #agile{
+            font-style: italic;
+            font-weight: bold;
+            background-color: rgb(230, 227, 227);
+        }
+        
     </style>
 </head>
 <body>
         <section id="home">
-          <h2 style="color: blue; font-style: italic;" >Professional Summary</h2>
+          <h2 class="summary">Professional Summary</h2>
           <ul>
-            <li>Having 1 years of experience developing single page Web Applications using Angular8, HTML5, CSS3, Bootstrap 5, Typescript, Javascript</li>
+            <li id="experience">Having 1 years of experience developing single page Web Applications using <span class="tech"> Angular8, HTML5, CSS3, Bootstrap 5, Typescript, Javascript</span></li>
             <li class="Name">Experience on Working with Version control system- GIT And GitHub</li>
             <li class="Name">Experience working with JIRA for user stories and bug tracking</li>
             <li>Strong Debugging and troubleshooting code experience using Chrome Developer Tool</li>
             <li class="Name">Working Exposure on ID's like VS Code And Notepad ++ </li>
-            <li>Good Working Experience under Agile methodologies environment</li>
+            <li>Good Working Experience under <span id="agile">Agile methodologies</span> environment</li>
             <li>Experience in Using Chrome developer Tool for debugging and Troubleshooting the code</li>
             <li>Knowledge of NodeJS</li>
             <li id="Id">Ability to work with people at all levels in the programs</li>
