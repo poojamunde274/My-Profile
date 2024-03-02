@@ -75,6 +75,18 @@
       .footer-margin{
         margin-right: 20px;
       }
+      #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+      .roles{
+        list-style-type: lower-alpha;
+      }
+      #projectDes::selection{
+      background-color: rgb(241, 193, 104);
+    }
       /* *{
         font-family: "Poppins", sans-serif;
       } */
@@ -115,7 +127,7 @@
           TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH
         </p>
         <h2 class="heading" >Professional Summary</h2>
-        <ul>
+        <ul id="listSummary">
           <li style="color: rgb(130, 8, 8);">Having 1 years of experience developing single page Web Applications using Angular8, HTML5, CSS3, Bootstrap 5, Typescript, Javascript</li>
           <li style="color: brown; background-color: rgb(235, 213, 184);">Experience on Working with Version control system- GIT And GitHub</li>
           <li>Experience working with JIRA for user stories and bug tracking</li>
@@ -176,12 +188,12 @@
           <br>
           <strong class="space">Team Size:</strong>06  <strong class="space-add">Duration:</strong><i> 2021-1 <sup>st</sup>- July till <u>Present</u></i> <br>
           <br>
-          <strong>Project Description:</strong> This Project is mainly used for student management in colleges, where it helps to manage student record like <br>
+          <strong id="projectdes">Project Description:</strong> This Project is mainly used for student management in colleges, where it helps to manage student record like <br>
           student registration, student update, and to see all the list of academic activities like score card and attendance.
       </p>
       <hr>
       <h2 class="heading">Roles And Responsibilities</h2>
-      <ul>
+      <ol class="roles">
           <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li>Work closely with backend developers for code integration</li>
           <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -189,7 +201,7 @@
           <li>Used JIRA for bug tracking</li>
           <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospective meetings</li>
           <li>involved in fixing technical issuse in production environment </li>
-      </ul>
+      </ol>
         
       </section>
 
