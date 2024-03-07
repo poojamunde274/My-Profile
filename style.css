@@ -4,12 +4,16 @@
     margin: 0;
     box-sizing: border-box;
     list-style-type: none;
+  
 }
 /* Header section */
 .header{
     color: rgb(247, 239, 239);
     background-color: rgb(13, 14, 12);
     font-weight: bolder;
+    top: 0px;
+    left: 10px;
+    position: fixed;
   }
   .header-info{
     margin-right: 30px;
@@ -18,8 +22,12 @@
   
   /* Navigation Section */
 #navSection{
+    background-color: beige;
     padding: 10px;
     text-align: right;
+    top: 35px;
+    right: 10px;
+    position: fixed;
 }
 #navSection a{
     text-decoration: none;
@@ -89,8 +97,23 @@
     margin-right: 20px;
   }
   #asd{
+    font-size: x-large;
     margin-right: 20px;
     color: blue;
+  }
+  #position1{
+    font-size:xx-large;
+    color: rgb(9, 121, 43);
+    bottom: 5px;
+    right: 10px;
+    position: fixed;
+  }
+  #position2{
+    font-size:xx-large;
+    bottom: 5px;
+    right: 50px;
+    position: fixed;
+
   }
   /* Copy write section */
   .section{
