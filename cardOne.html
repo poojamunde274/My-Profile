@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardOne</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+      #container{
+        width: 310px;
+        height: 450px;
+        margin: 10px auto;
+        background-color: rgb(243, 225, 225);
+        border-radius: 8px;
+      }
+      #card{
+        padding: 10px;
+      }
+
+      #textarea{
+        resize: none;
+        background-color: beige;
+        color: burlywood;
+        border-radius: 5px;
+      }
+
+      .buttonOne{
+        margin-left: 180px;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        height: 30px;
+      }
+      #box{
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: 280px;
+        border: none;
+        background-color: aliceblue;
+      }
+      #boxOne{
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: 280px;
+        height: 50px;
+        border: none;
+        background-color: aliceblue;
+      }
+      #star{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="container">
+        <section id="card">
+            <h3>Subscriber</h3>
+            <hr>
+        <form action="">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><textarea id="textarea" cols="32" rows="10" placeholder="We're sorry to see you go, but hey, no hard feeling, hopefully we will see you back one day. Please fill in your email address in order to unsubscribe from the list. we will receive an email to confirm your unsubscription, just to make sure this is not an accident or somebody else tries to unsubscribe you."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email <span id="star">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="box" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Unsubscribe Reason</label></td> 
+                    </tr>
+                    <tr>
+                        <td><input id="boxOne" type="text" placeholder="Unsubscribe Reason"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <hr>
+
+        <button class="buttonOne" type="submit">Unsubscribe</button>
+    
+        </section>
+
+    </section>
+    
+    
+  </body>
+</html>
